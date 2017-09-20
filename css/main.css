@@ -1,0 +1,121 @@
+body{
+	background: #444444;
+	
+}
+
+#content-box{
+	position: 	fixed; 
+	top: 		0px; 
+	left: 		0px; 
+	width: 		100vw; 
+	height: 	100vh;
+	overflow: 	auto;
+}
+
+#content-box #game{
+	position: 			absolute; 
+	border: 			2px solid; 
+	border-radius:		4px;
+	-webkit-box-shadow: 20px 20px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 	20px 20px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 		20px 20px 5px 0px rgba(0,0,0,0.75);
+	min-width: 			710px;
+	min-height: 		710px;
+	background: 		#FEFEFE;
+}
+
+#content-box #game #game-navigation{
+	position: 		absolute;
+	width: 			100%;
+	background: 	#CCC;
+	height: 		30px;
+	border-bottom: 	2px solid;
+}
+
+#content-box #game #game-navigation>div.pull-left{
+	margin-right: 25px;
+}
+
+#content-box #game #game-navigation>div.pull-left>div.pull-right{
+	margin-left: 	10px; 
+	width: 			200px;
+}
+
+#content-box #game #game-navigation>div.pull-left>div.pull-right>div{
+	float: left;
+}
+
+#content-box #game #game-navigation>div.pull-left>div.pull-right>div:first-child, 
+#content-box #game #game-navigation>div.pull-left>div.pull-right>div:last-child{
+	width: 40px;
+}
+
+#content-box #game #game-navigation>div.pull-left>div.pull-right>div:nth-child(2){
+	width: 			100px; 
+	margin-left: 	10px; 
+	margin-right: 	10px;
+}
+
+#content-box #game #game-navigation strong, 
+#content-box #game #game-navigation input{
+	padding-top: 4px;
+}
+
+#content-box #game #game-stats{
+	position: 	absolute;
+	bottom: 	2px;
+	left: 		0px;
+	width: 		100%;
+}
+
+#content-box #game #game-stats>div.pull-right>strong, 
+#content-box #game #game-stats>div.pull-right>span{
+	background: #FEFEFE;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#content-box #game #game-field .field-element{
+	cursor: 		pointer;
+	float: 			left; 
+	border-right: 	1px solid; 
+	border-bottom: 	1px solid;
+}
+
+#content-box #game #game-field .field-element.alive{
+	background: #00FF00; 
+}
+
+#content-box #game #game-field .field-element.dead{
+	border: 2px solid #FF0000; 
+}
+
+@media only screen  and (orientation:portrait){
+	#content-box #game{
+		top: 	0vh; 
+		left: 	0vw; 
+		width: 	100vw; 
+		height: 100vw;
+	}
+}
+
+@media only screen  and (orientation:landscape){
+	#content-box #game{
+		top: 	0vh; 
+		left: 	0vw; 
+		width: 	100vh; 
+		height: 100vh;
+	}
+}
+
+@media only screen and (orientation:portrait) and (min-device-width: 710px){
+	#content-box #game{
+		top: calc(50vh - 50vw);
+	}
+}
+
+@media only screen and (orientation:landscape) and (min-device-height: 710px){
+	#content-box #game{
+		left: calc(50vw - 50vh);
+	}
+}

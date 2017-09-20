@@ -1,0 +1,107 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="robots" content="index, follow, archive">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Game of life</title>
+	
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="css/main.css">
+	
+	<script src="js/game.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div id="content-box">
+		<div id="game">
+			<div id="game-navigation">
+				<div class="pull-left">
+					<strong class="text-left">Speed:</strong>
+					<div class="pull-right clearfix">
+						<div>
+							<span class="btn btn-md btn-default" id="game-btn-speed-decrease">
+								<span class="glyphicon glyphicon-minus"></span>
+							</span>
+						</div>
+						<div>
+							<input type="range" id="game-btn-speed" min="0.5" max="10" step="0.1" value="2.5">
+						</div>
+						<div>
+							<span class="btn btn-md btn-default" id="game-btn-speed-increase">
+								<span class="glyphicon glyphicon-plus"></span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="pull-left">
+					<strong class="text-left">Size:</strong>
+					<div class="pull-right clearfix">
+						<div>
+							<span class="btn btn-md btn-default" id="game-btn-size-decrease">
+								<span class="glyphicon glyphicon-minus"></span>
+							</span>
+						</div>
+						<div>
+							<input type="range" id="game-btn-size" min="10" max="100" step="1" value="25">
+						</div>
+						<div>
+							<span class="btn btn-md btn-default" id="game-btn-size-increase">
+								<span class="glyphicon glyphicon-plus"></span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="pull-right">
+					<a class="btn btn-md btn-default" id="game-button-configurations">
+						<span class="glyphicon glyphicon-info-sign"></span>
+					</a>
+					<a class="btn btn-md btn-default" id="game-button-rules">
+						<span class="glyphicon glyphicon-question-sign"></span>
+					</a>
+					<a class="btn btn-md btn-default" id="game-button-move">
+						<span class="glyphicon glyphicon-move"></span>
+					</a>
+				</div>
+			</div>
+			<div id="game-stats">
+				<div class="pull-left">
+					<a class="btn btn-md btn-default" id="game-btn-clear">
+						<span class="glyphicon glyphicon-stop"></span>
+					</a>
+					<a class="btn btn-md btn-default" id="game-btn-start">
+						<span class="glyphicon glyphicon-play"></span>
+					</a>
+					<a class="btn btn-md btn-default hidden" id="game-btn-pause">
+						<span class="glyphicon glyphicon-pause"></span>
+					</a>
+					<a class="btn btn-md btn-default" id="game-btn-next">
+						<span class="glyphicon glyphicon-step-forward"></span>
+					</a>
+				</div>
+				<div class="pull-right">
+					<strong>Geschwindigkeit:</strong>
+					<span id="game-speed">2.5</span>&nbsp;<span>FPS</span>
+					&emsp;
+					<strong>Feldgröße:</strong>
+					<span id="game-size">25x25</span>
+					&emsp;
+					<strong class="text-left">Generation:</strong> 
+					<span id="game-generation">0</span>
+					&emsp;
+					<span>&copy; 2017 Jules Rau</span>
+					&emsp;
+				</div>
+			</div>
+			<div id="game-field"></div>
+		</div>
+	</div>
+	<div id="game-popup"></div>
+</body>
+</html>
