@@ -17,6 +17,20 @@ This popular game was written in JavaScript using HTML and CSS. Tested and devel
 No settings to do, all settings can be done by the user. 
 WARNING: Do not increase the maximum grid size of 50 x 50 fields. This may could make the game real slow. 
 
+# Language
+German
+
+# Features
+* Variable game speed (0.5 FPS to 10 FPS)
+* Variable grid size (10x10  to 50x50)
+* Configuration informations (static, oscillators, space ships)
+* List of game rules
+* Draggable game field
+* Clear actual field
+* Play / Pause game
+* Show next step of current game status
+* Actual data display (speed, size, generation)
+
 # Usage examples
 Check out my [live version](http://jules-rau.de/projects/game-of-life/) for getting a first impression.
 
