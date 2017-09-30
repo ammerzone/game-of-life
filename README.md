@@ -21,4 +21,4 @@ WARNING: Do not increase the maximum grid size of 50 x 50 fields. This may could
 Check out my [live version](http://jules-rau.de/projects/game-of-life/) for getting a first impression.
 
 # Licensing
-Labyrinth Game is licensed under the [Apache-2.0 license](https://github.com/ammerzone/game-of-life/blob/master/LICENSE.md)
+Labyrinth Game is licensed under the [MIT license](https://github.com/ammerzone/game-of-life/blob/master/LICENSE.md)
