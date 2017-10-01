@@ -35,4 +35,4 @@ German
 Check out my [live version](http://jules-rau.de/projects/game-of-life/) for getting a first impression.
 
 # Licensing
-Labyrinth Game is licensed under the [MIT license](https://github.com/ammerzone/game-of-life/blob/master/LICENSE.md)
+game-of-life is licensed under the [MIT license](https://github.com/ammerzone/game-of-life/blob/master/LICENSE.md)
