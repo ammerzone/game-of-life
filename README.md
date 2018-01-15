@@ -32,7 +32,7 @@ German
 * Actual data display (speed, size, generation)
 
 # Usage examples
-Check out my [live version](http://jules-rau.de/projects/game-of-life/) for getting a first impression.
+Check out my [live version](http://jules-rau.de/projekte/game-of-life/) for getting a first impression.
 
 # Licensing
 game-of-life is licensed under the [MIT license](https://github.com/ammerzone/game-of-life/blob/master/LICENSE.md)
